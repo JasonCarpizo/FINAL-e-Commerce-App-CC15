@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>productDetails_MainWindow</class>
+ <widget class="QMainWindow" name="productDetails_MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Ngyopify : Product Details</string>
+  </property>
+  <widget class="QWidget" name="productDetails_centralwidget">
+   <widget class="QWidget" name="productDetails_widget_header" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1280</width>
+      <height>88</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1280</width>
+      <height>88</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	 background-color: rgb(180, 43, 29);
+}
+
+QPushButton {
+    background-color:  rgb(255, 255, 255);
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font: bold 8pt &quot;Segoe UI&quot;, &quot;Arial&quot;;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #e6e6e6;
+    border: 1px solid #bbb;
+}
+
+QPushButton:pressed {
+    background-color: #dcdcdc;
+    border: 1px solid #aaa;
+}
+
+QLabel {
+    color: #FFFFFF;
+    font: 400 20pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+}</string>
+    </property>
+    <widget class="QLabel" name="productDetails_label_productDetails">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>10</y>
+       <width>401</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>20</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Product Details</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="aaaa" stdset="0">
+      <string>sa</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="productDetails_pushButton_back">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="productDetails_widget_main" native="true">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>130</y>
+      <width>1020</width>
+      <height>530</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1020</width>
+      <height>530</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1020</width>
+      <height>530</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget #product_details_widget {
+    border-radius: 10px;  /* optional, remove if you want sharp corners */
+	background-color: rgb(217, 217, 217,128);
+}</string>
+    </property>
+    <widget class="QWidget" name="productDetails_widget_productImage" native="true">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>300</width>
+       <height>400</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>300</width>
+       <height>400</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>300</width>
+       <height>400</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(217, 217, 217);</string>
+     </property>
+     <widget class="QLabel" name="productDetails_label_productImage">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>301</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="productDetails_label_productName">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>60</y>
+       <width>521</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    rgb(0, 0, 0)            /* Dark neutral text */
+    font: bold 20pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;  /* Clean, modern font */
+    letter-spacing: 0.2px;       /* Subtle spacing for readability */
+}</string>
+     </property>
+     <property name="text">
+      <string>Product Name</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="aaaa" stdset="0">
+      <string>sa</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="productDetails_label_price">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>130</y>
+       <width>521</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>20</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: rgb(180, 43, 29);         /* Dark neutral text */
+    font: 20pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;  /* Clean, modern font */
+    letter-spacing: 0.2px;       /* Subtle spacing for readability */
+}</string>
+     </property>
+     <property name="text">
+      <string>₱ 000,000.00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="aaaa" stdset="0">
+      <string>sa</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="productDetails_label_categoryLabel">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>200</y>
+       <width>521</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+     color: #333333;          /* Dark neutral text */
+    font: 12pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;  /* Clean, modern font */
+    letter-spacing: 0.2px;       /* Subtle spacing for readability */
+}</string>
+     </property>
+     <property name="text">
+      <string>Category</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="aaaa" stdset="0">
+      <string>sa</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="productDetails_label_categoryName">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>230</y>
+       <width>521</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: rgb(0, 0, 0);         /* Dark neutral text */
+    font: 16pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;  /* Clean, modern font */
+    letter-spacing: 0.2px;       /* Subtle spacing for readability */
+}</string>
+     </property>
+     <property name="text">
+      <string>Category Name</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="aaaa" stdset="0">
+      <string>sa</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="productDetails_label_sellerLabel">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>290</y>
+       <width>521</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+     color: #333333;          /* Dark neutral text */
+    font: 12pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;  /* Clean, modern font */
+    letter-spacing: 0.2px;       /* Subtle spacing for readability */
+}</string>
+     </property>
+     <property name="text">
+      <string>Seller</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="aaaa" stdset="0">
+      <string>sa</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="productDetails_label_sellerName">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>320</y>
+       <width>521</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: rgb(0, 0, 0);         /* Dark neutral text */
+    font: 16pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;  /* Clean, modern font */
+    letter-spacing: 0.2px;       /* Subtle spacing for readability */
+}</string>
+     </property>
+     <property name="text">
+      <string>Seller Name</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="aaaa" stdset="0">
+      <string>sa</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="productDetails_label_quantity">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>380</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+     color: #333333;          /* Dark neutral text */
+    font: 12pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;  /* Clean, modern font */
+    letter-spacing: 0.2px;       /* Subtle spacing for readability */
+}</string>
+     </property>
+     <property name="text">
+      <string>Quantity</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="aaaa" stdset="0">
+      <string>sa</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="productDetails_pushButton_addCart">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>430</y>
+       <width>311</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #B42B1D;         /* Flat red */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;                /* Optional: remove if you want sharp corners */
+    font: bold 9pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #a1281a;         /* Slightly darker on hover */
+}
+
+QPushButton:pressed {
+    background-color: #8c2116;         /* Even darker when pressed */
+}</string>
+     </property>
+     <property name="text">
+      <string>Add to Cart</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="productDetails_spinBox_quantity">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>381</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSpinBox {
+    color: #333333;
+    font: 9pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+</string>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>99</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="productDetails_label_stock">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>380</y>
+       <width>341</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+     color: #333333;          /* Dark neutral text */
+    font: 12pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;  /* Clean, modern font */
+    letter-spacing: 0.2px;       /* Subtle spacing for readability */
+}</string>
+     </property>
+     <property name="text">
+      <string>##  pieces available</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="aaaa" stdset="0">
+      <string>sa</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="productDetails_label_Error">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>430</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: rgb(180, 43, 29);
+    font: 12pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;  /* Clean, modern font */
+    letter-spacing: 0.2px;       /* Subtle spacing for readability */
+}</string>
+     </property>
+     <property name="text">
+      <string>Error(daapt blank)</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="aaaa" stdset="0">
+      <string>sa</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
