@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>seller_MainWindow</class>
+ <widget class="QMainWindow" name="seller_MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Ngyopify : Seller Centre</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="seller_centralwidget">
+   <widget class="QWidget" name="selelr_widget_header" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1280</width>
+      <height>88</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1280</width>
+      <height>88</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	 background-color: rgb(180, 43, 29);
+}
+
+QPushButton {
+    background-color:  rgb(255, 255, 255);
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font: bold 8pt &quot;Segoe UI&quot;, &quot;Arial&quot;;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #e6e6e6;
+    border: 1px solid #bbb;
+}
+
+QPushButton:pressed {
+    background-color: #dcdcdc;
+    border: 1px solid #aaa;
+}
+
+QLabel {
+    color: #FFFFFF;
+    font: 600 20pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+}</string>
+    </property>
+    <widget class="QLabel" name="seller_label_sellerCentre">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>10</y>
+       <width>301</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Ngyopify Seller Centre</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="aaaa" stdset="0">
+      <string>sa</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="seller_pushButton_logOut">
+     <property name="geometry">
+      <rect>
+       <x>1160</x>
+       <y>30</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Log Out</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="seller_label_myProducts">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>120</y>
+      <width>531</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #333333;              /* Dark neutral text */
+    font: bold 20pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;  /* Clean, modern font */
+    letter-spacing: 0.2px;       /* Subtle spacing for readability */
+}</string>
+    </property>
+    <property name="text">
+     <string>My Products</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="aaaa" stdset="0">
+     <string>sa</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="seller_widget_myProducts" native="true">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>180</y>
+      <width>531</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(217, 217, 217);</string>
+    </property>
+    <widget class="QScrollArea" name="seller_scrollArea_myProducts">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>531</width>
+       <height>481</height>
+      </rect>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="seller_scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>529</width>
+        <height>479</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>531</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="seller_gridLayout_myProducts"/>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="seller_widget_productOrders" native="true">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>140</y>
+      <width>501</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{ background-color: rgb(180, 43, 29); }
+
+QLabel {
+	
+	color: rgb(255,255,255);
+	font: 16pt  &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;  /* Clean, modern font */
+}</string>
+    </property>
+    <widget class="QLabel" name="seller_label_productOrder">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>461</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Product Orders</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="aaaa" stdset="0">
+      <string>sa</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTableWidget" name="seller_tableWidget_productOrders">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>201</y>
+      <width>501</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+    background-color: #F9F9F9;
+    color: #333333;
+    border: 1px solid #CCCCCC;
+    gridline-color: #E0E0E0;
+    font: 9pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+    selection-background-color: #0078D7;
+    selection-color: white;
+    outline: 0;
+}
+
+QHeaderView::section {
+    background-color: #E6E6E6;
+    color: #333;
+    font-weight: 600;
+    padding: 6px;
+    border: 1px solid #CCCCCC;
+}
+
+QTableWidget::item {
+    padding: 6px;
+    border: none;
+}
+
+QTableWidget::item:selected {
+    background-color: #0078D7;
+    color: white;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="seller_pushButton_addProduct">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>630</y>
+      <width>501</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #B42B1D;         /* Flat red */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;                /* Optional: remove if you want sharp corners */
+    font: bold 9pt &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #a1281a;         /* Slightly darker on hover */
+}
+
+QPushButton:pressed {
+    background-color: #8c2116;         /* Even darker when pressed */
+}</string>
+    </property>
+    <property name="text">
+     <string>Add Product</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
