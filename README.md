@@ -16,7 +16,7 @@ Features
 #Database
 
 ## Item Categories
-Books & Stationery
+Books and Stationery
 Clothing and Fashion
 Electronics and Gadgets
 Food and Snacks
